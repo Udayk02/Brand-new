@@ -1,0 +1,150 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOxq1vhRl8lI8qz+944oiSK",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Udayk02/Brand-new/blob/master/AI%20Lab\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "68XgxAULP41d",
+        "outputId": "05325850-4404-40d1-d06a-7788b7d71a7c"
+      },
+      "source": [
+        "import calendar\n",
+        "month = int(input(\"Enter a month: \"))\n",
+        "year = int(input(\"Enter a year: \"))\n",
+        "print(calendar.month(year, month))\n",
+        "print(calendar.calendar(year, 2, 1, 6))"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a month: 5\n",
+            "Enter a year: 2001\n",
+            "      May 2001\n",
+            "Mo Tu We Th Fr Sa Su\n",
+            "    1  2  3  4  5  6\n",
+            " 7  8  9 10 11 12 13\n",
+            "14 15 16 17 18 19 20\n",
+            "21 22 23 24 25 26 27\n",
+            "28 29 30 31\n",
+            "\n",
+            "                                  2001\n",
+            "\n",
+            "      January                   February                   March\n",
+            "Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su\n",
+            " 1  2  3  4  5  6  7                1  2  3  4                1  2  3  4\n",
+            " 8  9 10 11 12 13 14       5  6  7  8  9 10 11       5  6  7  8  9 10 11\n",
+            "15 16 17 18 19 20 21      12 13 14 15 16 17 18      12 13 14 15 16 17 18\n",
+            "22 23 24 25 26 27 28      19 20 21 22 23 24 25      19 20 21 22 23 24 25\n",
+            "29 30 31                  26 27 28                  26 27 28 29 30 31\n",
+            "\n",
+            "       April                      May                       June\n",
+            "Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su\n",
+            "                   1          1  2  3  4  5  6                   1  2  3\n",
+            " 2  3  4  5  6  7  8       7  8  9 10 11 12 13       4  5  6  7  8  9 10\n",
+            " 9 10 11 12 13 14 15      14 15 16 17 18 19 20      11 12 13 14 15 16 17\n",
+            "16 17 18 19 20 21 22      21 22 23 24 25 26 27      18 19 20 21 22 23 24\n",
+            "23 24 25 26 27 28 29      28 29 30 31               25 26 27 28 29 30\n",
+            "30\n",
+            "\n",
+            "        July                     August                  September\n",
+            "Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su\n",
+            "                   1             1  2  3  4  5                      1  2\n",
+            " 2  3  4  5  6  7  8       6  7  8  9 10 11 12       3  4  5  6  7  8  9\n",
+            " 9 10 11 12 13 14 15      13 14 15 16 17 18 19      10 11 12 13 14 15 16\n",
+            "16 17 18 19 20 21 22      20 21 22 23 24 25 26      17 18 19 20 21 22 23\n",
+            "23 24 25 26 27 28 29      27 28 29 30 31            24 25 26 27 28 29 30\n",
+            "30 31\n",
+            "\n",
+            "      October                   November                  December\n",
+            "Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su\n",
+            " 1  2  3  4  5  6  7                1  2  3  4                      1  2\n",
+            " 8  9 10 11 12 13 14       5  6  7  8  9 10 11       3  4  5  6  7  8  9\n",
+            "15 16 17 18 19 20 21      12 13 14 15 16 17 18      10 11 12 13 14 15 16\n",
+            "22 23 24 25 26 27 28      19 20 21 22 23 24 25      17 18 19 20 21 22 23\n",
+            "29 30 31                  26 27 28 29 30            24 25 26 27 28 29 30\n",
+            "                                                    31\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "S-VzD2HCReZX",
+        "outputId": "0dff964f-e4a2-4c54-8eac-f8561d74844b"
+      },
+      "source": [
+        "while(True):\n",
+        "  a = int(input(\"Enter 1st number: \"))\n",
+        "  b = int(input(\"Enter 2nd number: \"))\n",
+        "  option = int(input(\"1. Add 2. Subtract 3. Multiply 4. Divide 5. Exit : \"))\n",
+        "  if option == 1:\n",
+        "    print(a + b)\n",
+        "  elif option == 2:\n",
+        "    print(a - b)\n",
+        "  elif option == 3:\n",
+        "    print(a * b)\n",
+        "  elif option == 4:\n",
+        "    print(a / b)\n",
+        "  else:\n",
+        "    break"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter 1st number: 1\n",
+            "Enter 2nd number: 2\n",
+            "1. Add 2. Subtract 3. Multiply 4. Divide 5. Exit : 1\n",
+            "3\n",
+            "Enter 1st number: 5\n",
+            "Enter 2nd number: 6\n",
+            "1. Add 2. Subtract 3. Multiply 4. Divide 5. Exit : 2\n",
+            "-1\n",
+            "Enter 1st number: 5\n",
+            "Enter 2nd number: 9\n",
+            "1. Add 2. Subtract 3. Multiply 4. Divide 5. Exit : 5\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
